@@ -1,0 +1,21 @@
+{
+  "tests": "specs/**/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "Nightmare": {
+      "url": "https://yoursite.com/",
+      "show": true,
+      "waitForAction": 500,
+      "restart": false
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "login": "./pages/Login.js",
+    "quotationPage": "./pages/Quotation.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "end-2-end"
+}
